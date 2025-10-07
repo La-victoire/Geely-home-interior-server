@@ -7,7 +7,7 @@ async function bootstrap() {
     origin: ['http://localhost:3000', 'https://geelyhomeinteriors.vercel.app','https://nonmathematical-charley-milkier.ngrok-free.dev'],
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
     credentials: true,
-    allowedHeaders: ['Content-Type', 'Authorization','X-Requested-With','Accept','Origin', 'ngrok-skip-browser-warning',],
+    allowedHeaders: ['*'],
   })
   await app.listen(process.env.PORT ?? 3000); 
 }
