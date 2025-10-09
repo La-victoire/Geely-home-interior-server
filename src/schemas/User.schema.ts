@@ -4,7 +4,7 @@ import { Address, AddressSchema } from "./userSubSchema/Address.schema";
 import { Order, orderSchema } from "./Order.schema";
 import { UserSettings } from "./UserSettings.schema";
 
-@Schema() 
+@Schema({ timestamps: true })
 export class User extends Document {
   @Prop({ required: true})
   firstname: string;
